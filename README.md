@@ -2,7 +2,7 @@
 
 # Bookmark manager📚
 
-[Task](#Task) | [Installation Instructions](#Installation) | [Functional Description](#Functional_Description) | [User Stories](#User_Stories) | [Objects & Methods](#Methods) | [Testing](#Testing) | [Further improvements](#Further_Improvements) |
+[Task](#Task) | [Installation Instructions](#Installation) | [Database setup](#Database)[Functional Description](#Functional_Description) | [User Stories](#User_Stories) | [Objects & Methods](#Methods) | [Testing](#Testing) | [Further improvements](#Further_Improvements) |
 
 ![bookmarks](bookmarks.jpg)
 
@@ -35,6 +35,13 @@ $ rubocop
 ```Shell
 $ rackup config.ru -p 4567
 ```
+
+## <a name="Database">Database setup</a>
+
+1. Connect to psql
+2. Create the database using the psql command CREATE DATABASE bookmark_manager;
+3. Connect to the database using the pqsl command \c bookmark_manager;
+4. Run the query we have saved in the file 01_create_bookmarks_table.sql
 
 ## <a name="Functional_Description">Functional Description</a>
 
