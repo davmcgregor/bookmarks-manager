@@ -53,8 +53,8 @@ The website will have the following specification:
 
 ```
 As a user,
-So I can all my bookmarks,
-I would like ot be able to view all saved bookmarks
+So I can see all my bookmarks,
+I would like to be able to view all saved bookmarks
 ```
 
 ## <a name="Methods">Objects & Methods</a>
