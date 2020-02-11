@@ -21,6 +21,25 @@
           1,
           null,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/davidmcgregor/Projects/bookmarks-manager/spec/features/creating_bookmarks_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -56,6 +75,6 @@
         ]
       }
     },
-    "timestamp": 1581415258
+    "timestamp": 1581450955
   }
 }

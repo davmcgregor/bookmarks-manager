@@ -65,6 +65,11 @@ As a user,
 So I can see all my bookmarks,
 I would like to be able to view all saved bookmarks
 ```
+```
+As a user
+So I can store bookmark data for later retrieval
+I want to add a bookmark to Bookmark Manager
+```
 
 ## <a name="Methods">Objects & Methods</a>
 
