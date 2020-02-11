@@ -2,7 +2,7 @@
 
 # Bookmark manager📚
 
-[Task](#Task) | [Installation Instructions](#Installation) | [Database setup](#Database)[Functional Description](#Functional_Description) | [User Stories](#User_Stories) | [Objects & Methods](#Methods) | [Testing](#Testing) | [Further improvements](#Further_Improvements) |
+[Task](#Task) | [Installation Instructions](#Installation) | [Database setup](#Database)[Functional Description](#Functional_Description) | [User Stories](#User_Stories) | [Domain Model](#Domain_Model) | [Objects & Methods](#Methods) | [Testing](#Testing) | [Further improvements](#Further_Improvements) |
 
 ![bookmarks](bookmarks.jpg)
 
@@ -70,6 +70,10 @@ As a user
 So I can store bookmark data for later retrieval
 I want to add a bookmark to Bookmark Manager
 ```
+
+## <a name="Domain_Model">Domain Model</a>
+
+![domain_model](DomainModel.jpg)
 
 ## <a name="Methods">Objects & Methods</a>
 
