@@ -5,7 +5,7 @@ class BookmarkManager < Sinatra::Base
   enable :sessions, :method_override
 
   get '/' do
-    "Hello world"
+    "Bookmark Manager"
   end
 
   get '/bookmarks' do     
@@ -22,13 +22,19 @@ class BookmarkManager < Sinatra::Base
     redirect '/bookmarks'
   end
 
-  get '/bookmarks/delete' do
-    erb :new
-  end
-
   delete '/bookmarks/:id' do
     Bookmark.delete(id: params[:id])
     redirect '/bookmarks'
+  end
+
+  get '/bookmarks/:id/update' do
+    @bookmark = Bookmark.find(id: params[:id])
+    erb :update
+  end
+
+  patch '/bookmarks/:id' do
+    Bookmark.update(id: params[:id], title: params[:title], url: params[:url])
+    redirect('/bookmarks')
   end
 
 end

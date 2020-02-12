@@ -73,7 +73,12 @@ I want to add a bookmark to Bookmark Manager
 ```
 As a user
 So I can remove my bookmark from Bookmark Manager
-I want to delete a bookmark
+I want to delete a bookmark from
+```
+```
+As a user
+So I can make changes to bookmarks in Bookmark Manager
+I want to update a bookmark
 ```
 
 ## <a name="Domain_Model">Domain Model</a>
