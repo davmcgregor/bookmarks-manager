@@ -36,6 +36,16 @@
           1,
           null,
           null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -56,6 +66,23 @@
           1,
           1,
           1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/davidmcgregor/Projects/bookmarks-manager/spec/features/deleting_bookmarks_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
           1,
           1,
           null,
@@ -94,6 +121,6 @@
         ]
       }
     },
-    "timestamp": 1581459592
+    "timestamp": 1581518655
   }
 }
