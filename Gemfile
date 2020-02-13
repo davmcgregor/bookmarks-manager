@@ -6,6 +6,7 @@ group :development, :test do
   gem 'rake'
   gem 'pg'
   gem 'sinatra'
+  gem 'sinatra-flash'
   gem 'capybara'
   gem 'shotgun', '0.9.2'
   gem 'rspec'

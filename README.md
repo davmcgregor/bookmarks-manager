@@ -66,19 +66,24 @@ So I can see all my bookmarks,
 I would like to be able to view all saved bookmarks
 ```
 ```
-As a user
-So I can store bookmark data for later retrieval
+As a user,
+So I can store bookmark data for later retrieval,
 I want to add a bookmark to Bookmark Manager
 ```
 ```
-As a user
-So I can remove my bookmark from Bookmark Manager
+As a user,
+So I can remove my bookmark from Bookmark Manager,
 I want to delete a bookmark from
 ```
 ```
-As a user
-So I can make changes to bookmarks in Bookmark Manager
+As a user,
+So I can make changes to bookmarks in Bookmark Manager,
 I want to update a bookmark
+```
+```
+As a user,
+To ensure all submitted URLs are valid URLs,
+I want to validate all bookmarks
 ```
 
 ## <a name="Domain_Model">Domain Model</a>
