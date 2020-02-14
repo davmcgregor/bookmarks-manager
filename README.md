@@ -85,6 +85,11 @@ As a user,
 To ensure all submitted URLs are valid URLs,
 I want to validate all bookmarks
 ```
+```
+As a user
+So that I can make interesting notes
+I want to add a Comment to a Bookmark
+```
 
 ## <a name="Domain_Model">Domain Model</a>
 
