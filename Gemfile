@@ -5,6 +5,7 @@ ruby '2.7.0'
 group :development, :test do
   gem 'rake'
   gem 'pg'
+  gem "bcrypt"
   gem 'sinatra'
   gem 'sinatra-flash'
   gem 'capybara'
