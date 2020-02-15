@@ -2,7 +2,7 @@ require_relative './database_connection'
 
 class Comment
   def self.create(bookmark_id:, text:)
-    result = DatabaseConnection.query("INSERT INTO comments (bookmark_id, text) VALUES ('#{bookmark_id}','#{text}') RETURNING id, text, bookmark_id;")
+    result = DatabaseConnection.query("INSERT INTO comments (bookmark_id, text) VALUES ('#{bookmark_id}','#{text}') RETURNING id, text, bookmark_id")
     Comment.new(
       id: result[0]['id'],
       text: result[0]['text'],

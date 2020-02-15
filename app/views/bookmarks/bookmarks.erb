@@ -5,24 +5,47 @@
         <%= bookmark.title %>
       </a>
       <form action="/bookmarks/<%= bookmark.id %>" method="post">
-        <input type="hidden" name="_method" value='DELETE'/>
+        <input type='hidden' name='_method' value='DELETE'/>
         <input type="submit" value="Delete" />
       </form>
       <form action="/bookmarks/<%= bookmark.id %>/update" method="get">
         <input type="submit" value="Update" />
       </form>
       <form action="/bookmarks/<%= bookmark.id %>/comments/new" method="get">
-        <input type="submit" value="Comment" />
+        <input type="submit" value="Add Comment" />
       </form>
-      <ul>
-      <% bookmark.comments.each do |comment| %>
-        <li><%= comment.text %></li>
+      <form action="/bookmarks/<%= bookmark.id %>/tags/new" method="get">
+        <input type="submit" value="Add Tag" />
+      </form>
+      
+      <% if bookmark.comments.length > 0 %>
+        <div>
+          <h2>Comments</h2>
+          <ul>
+            <% bookmark.comments.each do |comment| %>
+              <li><%= comment.text %></li>
+            <% end %>
+          </ul>
+        </div>
       <% end %>
-      </ul>
+
+      <% if bookmark.tags.length > 0 %>
+        <div>
+          <h2>Tags</h2>
+          <ul>
+            <% bookmark.tags.each do |tag| %>
+              <li>
+                <a href="/tags/<%= tag.id %>/bookmarks">
+                  <%= tag.content %>
+                </a>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
     </li>
   <% end %>
 </ul>
-
 <h2>
   <%= flash[:notice] %>
 </h2>
