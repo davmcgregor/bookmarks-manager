@@ -38,6 +38,12 @@ class BookmarkManager < Sinatra::Base
     end
   end
 
+  post '/sessions/destroy' do
+    session.clear
+    flash[:notice] = 'You have signed out.'
+    redirect('/bookmarks')
+  end
+
   get '/users/new' do
     erb :'users/new'
   end

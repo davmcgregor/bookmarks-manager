@@ -110,6 +110,11 @@ As a user
 So that I can keep my account secure
 I want to sign in with my email and password
 ```
+```
+As a user
+So that I can keep my account secure
+I want to sign out
+```
 
 ## <a name="Domain_Model">Domain Model</a>
 
