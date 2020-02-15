@@ -1,4 +1,6 @@
 require_relative './database_connection'
+require_relative './bookmark'
+
 
 class Tag
   attr_reader :id, :content

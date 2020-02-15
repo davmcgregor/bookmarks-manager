@@ -23,6 +23,20 @@ class BookmarkManager < Sinatra::Base
     erb :'bookmarks/bookmarks'
   end 
 
+  get '/sessions/new' do
+    erb :"sessions/new"
+  end
+
+  post '/sessions' do
+    if user
+      session[:user_id] = user.id
+      redirect('/bookmarks')
+    else
+      flash[:notice] = 'Please check your email or password.'
+      redirect('/sessions/new')
+    end
+  end
+
   get '/users/new' do
     erb :'users/new'
   end
