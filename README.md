@@ -136,9 +136,6 @@ At the moment logging in doesn't change the user experience much. Extend the app
 * A user has to be logged in to add or view Bookmarks
 * A user can only read/update/delete bookmarks they have added
 
-### Deleting Bookmarks with Comments and Tags
-Use TDD to ensure no errors when deleting a Bookmark that has a Comment or a Tag - allow a user to delete a Bookmark that has Comments and/or Tags
-
 ### Improve User Interface
 There are a number of unlinked routes - improve the user experience and test-drive a way to link the pages together
 
