@@ -17,8 +17,8 @@ This challenge is the fourth pair programming challenge at [Makers Academy](http
 
 1. Fork this repository, clone to your local machine then change into the directory:
 ```
-$ git clone git@github.com:davmcgregor/bookmark-manager.git
-$ cd bookmark-challenge
+$ git clone git@github.com:davmcgregor/bookmarks-manager.git
+$ cd bookmarks-manager
 ```
 2. Load dependencies with bundle:
 ```
@@ -125,7 +125,7 @@ I want to sign out
 Tests were written with RSpec and Capybara. To run the tests in terminal: 
 
 ```bash
-$ cd bookmark-manager
+$ cd bookmarks-manager
 $ rspec
 ```
 
