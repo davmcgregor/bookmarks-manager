@@ -2,7 +2,7 @@
 
 # Bookmark manager📚
 
-[Task](#Task) | [Installation Instructions](#Installation) | [Database setup](#Database)[Functional Description](#Functional_Description) | [User Stories](#User_Stories) | [Domain Model](#Domain_Model) | [Objects & Methods](#Methods) | [Testing](#Testing) | [Further improvements](#Further_Improvements) |
+[Task](#Task) | [Installation Instructions](#Installation) | [Database setup](#Database) | [Functional Description](#Functional_Description) | [User Stories](#User_Stories) | [Domain Model](#Domain_Model) | [Testing](#Testing) | [Further improvements](#Further_Improvements) |
 
 ![bookmarks](bookmarks.jpg)
 
@@ -17,7 +17,7 @@ This challenge is the fourth pair programming challenge at [Makers Academy](http
 
 1. Fork this repository, clone to your local machine then change into the directory:
 ```
-$ git clone git@github.com:davmcgregor/bookmakr-manager.git
+$ git clone git@github.com:davmcgregor/bookmark-manager.git
 $ cd bookmark-challenge
 ```
 2. Load dependencies with bundle:
@@ -30,10 +30,10 @@ $ bundle
 $ rspec
 $ rubocop
 ```
-4. Run the app on a local server and play on the broswer: http://localhost:4567/
+4. Run the app on a local server and use on the broswer: http://localhost:9292/
 
 ```Shell
-$ rackup config.ru -p 4567
+$ rackup
 ```
 
 ## <a name="Database">Database setup</a>
@@ -120,8 +120,6 @@ I want to sign out
 
 ![domain_model](DomainModel.jpg)
 
-## <a name="Methods">Objects & Methods</a>
-
 ## <a name="Testing">Testing</a>
 
 Tests were written with RSpec and Capybara. To run the tests in terminal: 
@@ -132,3 +130,17 @@ $ rspec
 ```
 
 ## <a name="Further_Improvements">Further Improvements</a>
+
+### Linking Bookmarks to a User
+At the moment logging in doesn't change the user experience much. Extend the application so that:
+* A user has to be logged in to add or view Bookmarks
+* A user can only read/update/delete bookmarks they have added
+
+### Deleting Bookmarks with Comments and Tags
+Use TDD to ensure no errors when deleting a Bookmark that has a Comment or a Tag - allow a user to delete a Bookmark that has Comments and/or Tags
+
+### Improve User Interface
+There are a number of unlinked routes - improve the user experience and test-drive a way to link the pages together
+
+### Automate Migrations
+There are a number of .sql files that have individual migration steps required to set up the databases. Try to set up Ruby methods to run each SQL command - run these methods to do the database setup in test and development 
